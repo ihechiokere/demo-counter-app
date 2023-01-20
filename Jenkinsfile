@@ -12,11 +12,17 @@ pipeline
                     git branch: 'main', url: 'https://github.com/ihechiokere/demo-counter-app.git'
                 }
             }
-            steps (Unit Test)
+            
+        }
+
+        stage ('Unit Test')
+        {
+            steps 
             {
-                
+                sh 'mvn test'
             }
         }
+            
 
     }
 }
