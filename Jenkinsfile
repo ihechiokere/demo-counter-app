@@ -42,7 +42,7 @@ pipeline
         {
             steps
             {
-                withSonarQubeEnv(credentialsId: 'vladtoken') {
+                withSonarQubeEnv(credentialsId: 'vlad') {
                     sh 'mvn clean package sonar:sonar' 
                 }
             }
