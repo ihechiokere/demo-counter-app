@@ -54,7 +54,7 @@ pipeline
         {
                 steps 
                 {
-                    scripts 
+                    script 
                     {
                         waitForQualityGate abortPipeline: false, credentialsId: 'vlad'
                     }
